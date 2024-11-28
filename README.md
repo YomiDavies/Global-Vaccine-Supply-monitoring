@@ -1,4 +1,8 @@
 # GlobalChallenges of the Global Supply Value Chain for Vaccines
+
+This is my class project for the course Integrated Services using Smart Contract at the Saskatchewan Polytechnic is Saskaton.
+
+
 The Global vaccine supply chain is confronted with many challenges such as counterfeiting, reporting inefficiencies, lack of transparency, and lack of real-time data, to mention a few. These challenges provide an opportunity to apply technology to solve these problems. With the use of blockchain technology, all the challenges listed can be mitigated or eradicated. I have listed some of the challenges below:
 1.	Counterfeiting: There are numerous cases of counterfeit vaccine production all around the world, in many cases, these vaccines are administered to innocent and unsuspecting members of the public both young and old, and some of the consequences can be life-changing.
 

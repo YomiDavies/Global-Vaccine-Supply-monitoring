@@ -24,12 +24,16 @@ Problems to be solved by the Decentralized Application
 
 
 SMART CONTRACT FUNCTIONS
+
 addVaccineBatchID():  This function is based on the assumption that each vaccine produced is assigned a unique batch id for easy tracking. This function is executed when the health facility receives the vaccine, this number is recorded on the blockchain, making it accessible to all relevant stakeholders.
 Input parameter:
+
 Batch ID: A unique identifier for the shipment.
 The second function for my Dapp is 
 Vaccine Administration (): This function is used when administering a vaccine to any recipient anywhere in the world.
+
 The input parameters are:
+
 i.batch id: This ID as earlier stated is unique for all vaccines produced around the world, such that no two vaccinees will have the same batch id. 
 ii. Patient Name: This is the name of the patient who the vaccine is administered on. This parameter will store the first name and last name. 
 iii. administration date: This will record the date the vaccine was administered at the Health Facility.

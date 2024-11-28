@@ -1,0 +1,45 @@
+//SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract VaccineAdministration {
+    address public owner;
+
+    // Mapping of vaccine batches to their expiry dates
+    mapping (string => uint256) public vaccineExpiryDates;
+
+    // Mapping of vaccine administration records
+    mapping (string => VaccineAdministrationRecord) public vaccineAdministrationRecords;
+
+    // Struct to represent a vaccine administration record
+    struct VaccineAdministrationRecord {
+        string patientName;
+        string administrationDate;
+        string facilityName;
+    }
+
+    constructor() {
+        owner = msg.sender;
+    }
+
+    // Event emitted when a vaccine batch is added
+    event VaccineBatchAdded(string batchId, uint256 expiryDate);
+
+    // Event emitted when a vaccine administration record is added
+    event VaccineAdministrationRecordAdded(string batchId, string patientName, string administrationDate, string facilityName);
+
+    // Function to add a vaccine batch and its expiry date (only owner)
+    function addVaccineBatch(string memory batchId, uint256 expiryDate) public {
+        require(msg.sender == owner, "Only the owner can call this function");
+        vaccineExpiryDates[batchId] = expiryDate;
+        emit VaccineBatchAdded(batchId, expiryDate);
+    }
+
+    // Function to record a vaccine administration (only owner)
+    function recordVaccineAdministration(string memory batchId, string memory patientName, string memory administrationDate, string memory facilityName) public {
+        require(msg.sender == owner, "Only the owner can call this function");
+        vaccineAdministrationRecords[batchId] = VaccineAdministrationRecord(patientName, administrationDate, facilityName);
+        emit VaccineAdministrationRecordAdded(batchId, patientName, administrationDate, facilityName);
+    }
+
+    // ... rest of the contract ...
+}

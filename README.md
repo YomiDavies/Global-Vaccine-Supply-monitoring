@@ -34,10 +34,14 @@ Vaccine Administration (): This function is used when administering a vaccine to
 
 The input parameters are:
 
-i.batch id: This ID as earlier stated is unique for all vaccines produced around the world, such that no two vaccinees will have the same batch id. 
+i.batch id: This ID as earlier stated is unique for all vaccines produced around the world, such that no two vaccinees will have the same batch id.
+
 ii. Patient Name: This is the name of the patient who the vaccine is administered on. This parameter will store the first name and last name. 
+
 iii. administration date: This will record the date the vaccine was administered at the Health Facility.
+
 iv Facility Name: This records the name of the Health Facility where the vaccine is administered.
+
 
 In conclusion, the decentralized application (dApp) for the global supply of vaccines offers a transformative solution to critical challenges in vaccine distribution. By leveraging blockchain technology and smart contracts, this dApp ensures real-time tracking, enhanced transparency, and accountability throughout the supply chain.  This application also provides stakeholders with the tool to monitor and maintain accurate inventories and prevent shortages. This system improves the overall efficiency of vaccine distribution while safeguarding against tampering, delays, and mismanagement, ensuring that vaccines reach those in need securely and on time.
 -Vaccine-Supply-monitoring
